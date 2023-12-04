@@ -1,8 +1,8 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
-
+      navClose = document.getElementById('nav-close'),
+      header = document.getElementById('header')
 /* Menu show */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
@@ -29,6 +29,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = () =>{
+    
+    
+    this.scrollY >= 50 ? header.classList.add('bg-header') 
+                       : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
