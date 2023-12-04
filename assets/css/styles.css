@@ -762,10 +762,16 @@ img {
   }
 }
 /* For 2K+ resolutions */
-@media screen and (min-width: 1700px){
+@media screen and (min-width: 1650px){
   .home{
-    max-width: 1280px;
+    max-width: 1900px;
     height: 990px;
     margin-inline: auto;
+  }
+  .home__mountain-3{
+    bottom: -2rem
+  }
+  .home__mountain-2{
+    bottom: -35px
   }
 }
